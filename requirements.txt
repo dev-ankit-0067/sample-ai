@@ -1,0 +1,10 @@
+streamlit
+bcrypt
+pytest
+langchain 
+langchain-openai 
+langchain_core
+openai
+python-dotenv
+python-docx
+pdfplumber
