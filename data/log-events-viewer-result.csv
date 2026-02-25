@@ -1,0 +1,522 @@
+timestamp,message
+1758025630023,"Preparing ...
+"
+1758025630028,"Tue Sep 16 12:27:10 UTC 2025
+"
+1758025630034,"/etc/alternatives/jre/bin/java --add-exports=jdk.compiler/com.sun.tools.javac.util=ALL-UNNAMED --add-exports=jdk.naming.dns/com.sun.jndi.dns=java.naming --add-opens=java.base/java.io=ALL-UNNAMED --add-opens=java.base/java.lang.reflect=ALL-UNNAMED --add-opens=java.base/java.lang=ALL-UNNAMED --add-opens=java.base/java.math=ALL-UNNAMED --add-opens=java.base/java.util=ALL-UNNAMED --add-opens=java.base/java.util.concurrent=ALL-UNNAMED --add-opens=java.base/java.net=ALL-UNNAMED --add-opens=java.base/java.text=ALL-UNNAMED --add-opens=java.base/java.util.concurrent.atomic=ALL-UNNAMED --add-opens=java.base/java.nio=ALL-UNNAMED --add-opens=java.base/java.time=ALL-UNNAMED --add-opens=java.base/java.util.regex=ALL-UNNAMED --add-opens=java.base/java.lang.invoke=ALL-UNNAMED --add-opens=java.base/sun.nio.ch=ALL-UNNAMED --add-opens=java.base/sun.nio.cs=ALL-UNNAMED --add-opens=java.base/sun.util.calendar=ALL-UNNAMED --add-opens=java.base/sun.security.action=ALL-UNNAMED --add-opens=java.base/jdk.internal=ALL-UNNAMED --add-opens=java.base/jdk.internal.ref=ALL-UNNAMED --add-opens=java.base/jdk.internal.reflect=ALL-UNNAMED --add-opens=java.base/jdk.internal.util=ALL-UNNAMED --add-opens=java.base/jdk.internal.util.random=ALL-UNNAMED --add-opens=java.sql/java.sql=ALL-UNNAMED --add-opens=jdk.management/com.sun.management.internal=ALL-UNNAMED -XX:+IgnoreUnrecognizedVMOptions -Djavax.net.ssl.trustStore=/opt/amazon/certs/InternalAndExternalAndAWSTrustStore.jks -Djavax.net.ssl.trustStoreType=JKS -Djavax.net.ssl.trustStorePassword=amazon -DRDS_ROOT_CERT_PATH=/opt/amazon/certs/rds-combined-ca-bundle.pem -DREDSHIFT_ROOT_CERT_PATH=/opt/amazon/certs/redshift-ssl-ca-cert.pem -DRDS_TRUSTSTORE_URL=file:/opt/amazon/certs/InternalAndExternalAndAWSTrustStore.jks -cp /usr/share/aws/aws-glue-shuffle/*:/usr/share/aws/emr-glue-bootstrap/*:/usr/lib/spark/jars/*:/usr/lib/spark/conf:/usr/share/aws/aws-java-sdk-v2/*:/usr/share/aws/*:/usr/share/aws/hmclient/lib/aws-glue-datacatalog-spark-client.jar:/usr/share/aws/hmclient/lib/*:/usr/share/aws/iceberg/lib/*:/usr/share/aws/delta/lib/*:/usr/lib/hudi/*:/usr/share/aws/redshift/jdbc/*:/usr/share/aws/redshift/spark-redshift/lib/*:/usr/share/aws/glue-connectors/lib/*:/usr/share/aws/glue-pii-dependencies/lib/*:/usr/share/aws/datazone-openlineage-spark/lib/*:/usr/lib/hadoop/lib/*::/usr/lib/hadoop-lzo/lib/*:/usr/share/aws/aws-java-sdk/*:/usr/share/aws/emr/emrfs/conf:/usr/share/aws/emr/emrfs/lib/*:/usr/share/aws/emr/emrfs/auxlib/*:/usr/share/aws/emr/ddb/lib/emr-ddb-hadoop.jar:/usr/share/aws/emr/goodies/lib/emr-hadoop-goodies.jar:/usr/share/aws/emr/cloudwatch-sink/lib/*:/usr/share/aws/emr/security/conf:/usr/share/aws/emr/security/lib/*:/usr/lib/hadoop/*:/etc/hadoop/conf:/usr/share/java/Hive-JSON-Serde/* -Dlog4j2.configurationFile=/etc/spark/conf.dist/log4j2.properties com.amazonaws.services.glue.GlueBootstrap --conf spark.dynamicAllocation.enabled=true --conf spark.shuffle.service.enabled=true --conf spark.dynamicAllocation.minExecutors=1 --conf spark.dynamicAllocation.maxExecutors=1 --conf spark.executor.memory=10g --conf spark.driver.memory=10g --conf spark.network.timeout=600  --conf_file s3://test-ansh-bcbsa/config/config.json --internal-lib-urls https://prod-us-east-1-package-distribution-artifacts-bucket.s3.amazonaws.com/007/Glue5.0/aws-glue-dataplane-python/java17/5.0.714/dDPmKd-AWSGlueDataplanePython-5.0.714.py.zip?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEBUaCXVzLWVhc3QtMSJHMEUCIH5zaR5G6nJJpXAZwJG4X6SV89QNnBAqtBcCiKPZf1A7AiEAxs44Lbgjm3bWc3EDDsXw6DN03BNj6wWNhGwQgRdXng8qoAIIjv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgwzMzk3MTI4NjU3OTQiDH3QIGjXFAJVn3uyeyr0Afc4MkvOnAMifoLmsGpXN%2B02Dg2ZpqapsUmZaPUYq%2B%2BZCwuk1NfLlebAfayGZRRsRaQVXcWrpFTOLrF4QLj3WMRaX1tOQPAGubbzcQuNHLT6hlhPLDvS5vJwd1oe2O6sZ6WpbWNAKGNGHu%2BtSVxc95HnPj3%2BAaGYN4PhYrGgUp%2BkbFg874UqowktNSToMqoB%2BLOlayTwIQOShUNJ9Nal9LEnLNbzCYFZvB8AopeSrl%2BFzb0GlN%2Fi7o2oJXGXKdamQXbe8suiytlZf%2FWmcyRssJkDVDURdS8l6XxO7ktYLQO%2B1uTLz%2Bxqz%2BVgjydh6KQe3nN7lrIw6K6lxgY6jwFZHG4U9wntB4ae5v4imBXTNL3N1g%2BQ9QcB2jCe06cXVw1YMj5Y5iH%2B8WZ%2BzkEbseAN1CRjNpX4ijEZav50I4%2BsOp10dqd6eYf9uQswQbiZO%2FAbCLUh74Ou%2FBV4pPWCqwWYr3ueZmTm3k5ZGcQaMSk1kOQqUeQbtTJDUjqvVmEUg%2Fu8nvUggZLXkq3bLIjvEg%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250916T122705Z&X-Amz-SignedHeaders=host&X-Amz-Credential=ASIAU6GDW6YBKQSKE64Q%2F20250916%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Expires=1800&X-Amz-Signature=64e872f938c806a5be68400b68e476386f4251873b558326ef19aba04d2eef6d,https://prod-us-east-1-package-distribution-artifacts-bucket.s3.amazonaws.com/007/Glue5.0/aws-glue-di-libs/java17/5.0.714/JoGwWP-aws-glue-di-package-5.0.714.jar?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEBUaCXVzLWVhc3QtMSJHMEUCIH5zaR5G6nJJpXAZwJG4X6SV89QNnBAqtBcCiKPZf1A7AiEAxs44Lbgjm3bWc3EDDsXw6DN03BNj6wWNhGwQgRdXng8qoAIIjv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgwzMzk3MTI4NjU3OTQiDH3QIGjXFAJVn3uyeyr0Afc4MkvOnAMifoLmsGpXN%2B02Dg2ZpqapsUmZaPUYq%2B%2BZCwuk1NfLlebAfayGZRRsRaQVXcWrpFTOLrF4QLj3WMRaX1tOQPAGubbzcQuNHLT6hlhPLDvS5vJwd1oe2O6sZ6WpbWNAKGNGHu%2BtSVxc95HnPj3%2BAaGYN4PhYrGgUp%2BkbFg874UqowktNSToMqoB%2BLOlayTwIQOShUNJ9Nal9LEnLNbzCYFZvB8AopeSrl%2BFzb0GlN%2Fi7o2oJXGXKdamQXbe8suiytlZf%2FWmcyRssJkDVDURdS8l6XxO7ktYLQO%2B1uTLz%2Bxqz%2BVgjydh6KQe3nN7lrIw6K6lxgY6jwFZHG4U9wntB4ae5v4imBXTNL3N1g%2BQ9QcB2jCe06cXVw1YMj5Y5iH%2B8WZ%2BzkEbseAN1CRjNpX4ijEZav50I4%2BsOp10dqd6eYf9uQswQbiZO%2FAbCLUh74Ou%2FBV4pPWCqwWYr3ueZmTm3k5ZGcQaMSk1kOQqUeQbtTJDUjqvVmEUg%2Fu8nvUggZLXkq3bLIjvEg%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250916T122705Z&X-Amz-SignedHeaders=host&X-Amz-Credential=ASIAU6GDW6YBKQSKE64Q%2F20250916%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Expires=1800&X-Amz-Signature=bcafcfb157126b2e7a55a6b186d46bc4e783a33e1a704b8bde56fc5c9c66ce3f,https://prod-us-east-1-package-distribution-artifacts-bucket.s3.amazonaws.com/007/Glue5.0/AwsGlueMLLibsPython/java17/5.0.317/wkUQYg-AwsGlueMLLibs.py.zip?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEBUaCXVzLWVhc3QtMSJHMEUCIH5zaR5G6nJJpXAZwJG4X6SV89QNnBAqtBcCiKPZf1A7AiEAxs44Lbgjm3bWc3EDDsXw6DN03BNj6wWNhGwQgRdXng8qoAIIjv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgwzMzk3MTI4NjU3OTQiDH3QIGjXFAJVn3uyeyr0Afc4MkvOnAMifoLmsGpXN%2B02Dg2ZpqapsUmZaPUYq%2B%2BZCwuk1NfLlebAfayGZRRsRaQVXcWrpFTOLrF4QLj3WMRaX1tOQPAGubbzcQuNHLT6hlhPLDvS5vJwd1oe2O6sZ6WpbWNAKGNGHu%2BtSVxc95HnPj3%2BAaGYN4PhYrGgUp%2BkbFg874UqowktNSToMqoB%2BLOlayTwIQOShUNJ9Nal9LEnLNbzCYFZvB8AopeSrl%2BFzb0GlN%2Fi7o2oJXGXKdamQXbe8suiytlZf%2FWmcyRssJkDVDURdS8l6XxO7ktYLQO%2B1uTLz%2Bxqz%2BVgjydh6KQe3nN7lrIw6K6lxgY6jwFZHG4U9wntB4ae5v4imBXTNL3N1g%2BQ9QcB2jCe06cXVw1YMj5Y5iH%2B8WZ%2BzkEbseAN1CRjNpX4ijEZav50I4%2BsOp10dqd6eYf9uQswQbiZO%2FAbCLUh74Ou%2FBV4pPWCqwWYr3ueZmTm3k5ZGcQaMSk1kOQqUeQbtTJDUjqvVmEUg%2Fu8nvUggZLXkq3bLIjvEg%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250916T122705Z&X-Amz-SignedHeaders=host&X-Amz-Credential=ASIAU6GDW6YBKQSKE64Q%2F20250916%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Expires=1800&X-Amz-Signature=8bfa206f68c379e49bfeee733b6398ddd017946f2d9d26b6a2340279f0534eb7,https://prod-us-east-1-package-distribution-artifacts-bucket.s3.amazonaws.com/007/Glue5.0/AwsGlueMLLibs/java17/5.0.317/fysQQH-AwsGlueMLLibs.jar?X-Amz-Security-Token=IQoJb3JpZ2luX2VjEBUaCXVzLWVhc3QtMSJHMEUCIH5zaR5G6nJJpXAZwJG4X6SV89QNnBAqtBcCiKPZf1A7AiEAxs44Lbgjm3bWc3EDDsXw6DN03BNj6wWNhGwQgRdXng8qoAIIjv%2F%2F%2F%2F%2F%2F%2F%2F%2F%2FARAAGgwzMzk3MTI4NjU3OTQiDH3QIGjXFAJVn3uyeyr0Afc4MkvOnAMifoLmsGpXN%2B02Dg2ZpqapsUmZaPUYq%2B%2BZCwuk1NfLlebAfayGZRRsRaQVXcWrpFTOLrF4QLj3WMRaX1tOQPAGubbzcQuNHLT6hlhPLDvS5vJwd1oe2O6sZ6WpbWNAKGNGHu%2BtSVxc95HnPj3%2BAaGYN4PhYrGgUp%2BkbFg874UqowktNSToMqoB%2BLOlayTwIQOShUNJ9Nal9LEnLNbzCYFZvB8AopeSrl%2BFzb0GlN%2Fi7o2oJXGXKdamQXbe8suiytlZf%2FWmcyRssJkDVDURdS8l6XxO7ktYLQO%2B1uTLz%2Bxqz%2BVgjydh6KQe3nN7lrIw6K6lxgY6jwFZHG4U9wntB4ae5v4imBXTNL3N1g%2BQ9QcB2jCe06cXVw1YMj5Y5iH%2B8WZ%2BzkEbseAN1CRjNpX4ijEZav50I4%2BsOp10dqd6eYf9uQswQbiZO%2FAbCLUh74Ou%2FBV4pPWCqwWYr3ueZmTm3k5ZGcQaMSk1kOQqUeQbtTJDUjqvVmEUg%2Fu8nvUggZLXkq3bLIjvEg%3D%3D&X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Date=20250916T122705Z&X-Amz-SignedHeaders=host&X-Amz-Credential=ASIAU6GDW6YBKQSKE64Q%2F20250916%2Fus-east-1%2Fs3%2Faws4_request&X-Amz-Expires=1800&X-Amz-Signature=c7a3b885e37646016f352b35e926b34aeb9bbb70107e4b8340a030e3bfbdfc30  --JOB_ID j_3852048bb6eb5d08821b5e9ff0da551ccb661449819a2f168330ec6179d1beb8 --spark-event-logs-path s3://aws-glue-assets-971996090633-us-east-1/sparkHistoryLogs/  --enable-observability-metrics true  --file_type CIHQ --JOB_NAME mdm_dq_ansh   --enable-glue-datacatalog true --glue-di-packages-correlation-ids 20250908-162851_,20250908-162851_,6359168764,6359168764 --job-bookmark-option job-bookmark-disable --TempDir s3://aws-glue-assets-971996090633-us-east-1/temporary/ --enable-metrics true --extra-py-files s3://test-ansh-bcbsa/resource/data_quality_bcbsa-1.0-py3-none-any.whl --enable-job-insights false  --JOB_RUN_ID jr_6e6f8fcde3c06dc9ebaea884e12a3d87d3d50c2b923df8770082240c10941d1f --scriptLocation s3://aws-glue-assets-971996090633-us-east-1/scripts/mdm_dq_ansh.py --job-language python --tenant-internal glue
+"
+1758025630068,"openjdk version ""17.0.16"" 2025-07-15 LTS
+OpenJDK Runtime Environment Corretto-17.0.16.8.1 (build 17.0.16+8-LTS)
+"
+1758025630068,"OpenJDK 64-Bit Server VM Corretto-17.0.16.8.1 (build 17.0.16+8-LTS, mixed mode, sharing)
+"
+1758025631375,"25/09/16 12:27:11 INFO GlueBootstrap: Glue Bootstrapping...
+"
+1758025631380,"25/09/16 12:27:11 INFO GlueBootstrap: Glue Bootstrapping the driver...
+"
+1758025631419,"25/09/16 12:27:11 INFO GlueBootstrap: Downloading Glue libs...
+"
+1758025631428,"25/09/16 12:27:11 INFO GlueBootstrap: Downloading customer supplied extra files...
+"
+1758025631598,"25/09/16 12:27:11 WARN VersionInfoUtils: The AWS SDK for Java 1.x entered maintenance mode starting July 31, 2024 and will reach end of support on December 31, 2025. For more information, see https://aws.amazon.com/blogs/developer/the-aws-sdk-for-java-1-x-is-in-maintenance-mode-effective-july-31-2024/
+You can print where on the file system the AWS SDK for Java 1.x core runtime is located by setting the AWS_JAVA_V1_PRINT_LOCATION environment variable or aws.java.v1.printLocation system property to 'true'.
+This message can be disabled by setting the AWS_JAVA_V1_DISABLE_DEPRECATION_ANNOUNCEMENT environment variable or aws.java.v1.disableDeprecationAnnouncement system property to 'true'.
+The AWS SDK for Java 1.x is being used here:
+at java.base/java.lang.Thread.getStackTrace(Thread.java:1619)
+at glue.shaded.com.amazonaws.util.VersionInfoUtils.printDeprecationAnnouncement(VersionInfoUtils.java:81)
+at glue.shaded.com.amazonaws.util.VersionInfoUtils.<clinit>(VersionInfoUtils.java:59)
+at glue.shaded.com.amazonaws.internal.EC2ResourceFetcher.<clinit>(EC2ResourceFetcher.java:44)
+at glue.shaded.com.amazonaws.auth.InstanceMetadataServiceCredentialsFetcher.<init>(InstanceMetadataServiceCredentialsFetcher.java:38)
+at glue.shaded.com.amazonaws.auth.InstanceProfileCredentialsProvider.<init>(InstanceProfileCredentialsProvider.java:111)
+at glue.shaded.com.amazonaws.auth.InstanceProfileCredentialsProvider.<init>(InstanceProfileCredentialsProvider.java:91)
+at glue.shaded.com.amazonaws.auth.InstanceProfileCredentialsProvider.<init>(InstanceProfileCredentialsProvider.java:75)
+at glue.shaded.com.amazonaws.auth.InstanceProfileCredentialsProvider.<clinit>(InstanceProfileCredentialsProvider.java:58)
+at glue.shaded.com.amazonaws.auth.EC2ContainerCredentialsProviderWrapper.initializeProvider(EC2ContainerCredentialsProviderWrapper.java:66)
+at glue.shaded.com.amazonaws.auth.EC2ContainerCredentialsProviderWrapper.<init>(EC2ContainerCredentialsProviderWrapper.java:55)
+at glue.shaded.com.amazonaws.auth.DefaultAWSCredentialsProviderChain.<init>(DefaultAWSCredentialsProviderChain.java:60)
+at glue.shaded.com.amazonaws.auth.DefaultAWSCredentialsProviderChain.<clinit>(DefaultAWSCredentialsProviderChain.java:54)
+at glue.shaded.com.amazonaws.services.s3.AmazonS3ClientBuilder.standard(AmazonS3ClientBuilder.java:46)
+at glue.shaded.com.amazonaws.services.s3.AmazonS3Client.builder(AmazonS3Client.java:740)
+at com.amazonaws.services.glue.GlueLibsDownloader$Builder.getS3Client(GlueLibsDownloader.java:289)
+at com.amazonaws.services.glue.GlueLibsDownloader$Builder.build(GlueLibsDownloader.java:281)
+at com.amazonaws.services.glue.GlueBootstrap.downloadUserLibs(GlueBootstrap.java:409)
+at com.amazonaws.services.glue.GlueBootstrap.lambda$setUpGlueAndUserLibs$2(GlueBootstrap.java:134)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1136)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:635)
+at java.base/java.lang.Thread.run(Thread.java:840)
+"
+1758025633768,"25/09/16 12:27:13 INFO GlueLibsDownloader: Elapsed time: 717 millis
+"
+1758025634861,"25/09/16 12:27:14 INFO GlueLibsDownloader: Elapsed time: 1812 millis
+"
+1758025635123,"1758025635121
+"
+1758025635235,"DEBUG	2025-09-16T12:27:15,234	5130	com.amazonaws.services.glue.launch.helpers.LaunchUtils$	[main]	121	log4j2.configurationFile=/tmp/glue-12318878736810206558log4j2.properties
+"
+1758025637079,"INFO	2025-09-16T12:27:17,078	6974	com.amazonaws.services.glue.utils.concurrent.PythonModuleTask	[pool-5-thread-1]	25	Setting Up Virtual Env and Application/Customer Provided Python Modules started in async mode
+"
+1758025637086,"INFO	2025-09-16T12:27:17,084	6980	com.amazonaws.services.glue.launch.helpers.PrepareLaunchProperties	[main]	89	Get job script: mdm_dq_ansh.py.
+"
+1758025637086,"DEBUG	2025-09-16T12:27:17,086	6982	com.amazonaws.services.glue.PrepareLaunch	[main]	281	prepareCmd is Invoked 
+"
+1758025637094,"INFO	2025-09-16T12:27:17,094	6990	com.amazonaws.services.glue.PythonModuleInstaller	[pool-5-thread-1]	176	Command to Execute python3.11 -m venv --clear /tmp/glue_venv
+"
+1758025637105,"DEBUG	2025-09-16T12:27:17,104	7000	com.amazonaws.services.glue.launch.helpers.FileManager	[main]	240	Created symlink: /tmp/data_quality_bcbsa-1.0-py3-none-any.whl -> /tmp/glue-job-6628531441990114465/extra-py-files/data_quality_bcbsa-1.0-py3-none-any.whl
+"
+1758025637105,"DEBUG	2025-09-16T12:27:17,105	7001	com.amazonaws.services.glue.launch.helpers.FileManager	[main]	240	Created symlink: /tmp/fysQQH-AwsGlueMLLibs.jar -> /tmp/glue-job-6628531441990114465/jars/fysQQH-AwsGlueMLLibs.jar
+"
+1758025637106,"DEBUG	2025-09-16T12:27:17,105	7001	com.amazonaws.services.glue.launch.helpers.FileManager	[main]	240	Created symlink: /tmp/JoGwWP-aws-glue-di-package-5.0.714.jar -> /tmp/glue-job-6628531441990114465/jars/JoGwWP-aws-glue-di-package-5.0.714.jar
+"
+1758025637106,"DEBUG	2025-09-16T12:27:17,106	7002	com.amazonaws.services.glue.launch.helpers.FileManager	[main]	240	Created symlink: /tmp/wkUQYg-AwsGlueMLLibs.py.zip -> /tmp/glue-job-6628531441990114465/python/wkUQYg-AwsGlueMLLibs.py.zip
+"
+1758025637106,"DEBUG	2025-09-16T12:27:17,106	7002	com.amazonaws.services.glue.launch.helpers.FileManager	[main]	240	Created symlink: /tmp/dDPmKd-AWSGlueDataplanePython-5.0.714.py.zip -> /tmp/glue-job-6628531441990114465/python/dDPmKd-AWSGlueDataplanePython-5.0.714.py.zip
+"
+1758025637160,"INFO	2025-09-16T12:27:17,159	7055	com.amazonaws.services.glue.launch.helpers.SparkPropsManagerHelper	[main]	99	
+proxy {
+  host = null
+  port = -1
+}
+"
+1758025637172,"INFO	2025-09-16T12:27:17,172	7068	com.amazonaws.services.glue.utils.EndpointConfig$	[main]	36	 STAGE is prod
+"
+1758025637706,"INFO	2025-09-16T12:27:17,706	7602	com.amazonaws.services.glue.utils.EndpointConfig$	[main]	90	Endpoints: {credentials_provider=com.amazonaws.auth.DefaultAWSCredentialsProviderChain, glue.endpoint=https://glue.us-east-1.amazonaws.com, lakeformation.endpoint=https://lakeformation.us-east-1.amazonaws.com, jes.endpoint=https://glue-jes-prod.us-east-1.amazonaws.com, region=us-east-1}
+"
+1758025637766,"INFO	2025-09-16T12:27:17,766	7662	com.amazonaws.services.glue.utils.AWSClientUtils$	[main]	98	AWSClientUtils: create aws sts client with conf: proxy hostnull, proxy port 0
+"
+1758025638921,"INFO	2025-09-16T12:27:18,920	8816	com.amazonaws.services.gluedi.sensei.autodebugging.AutoDebuggingProxy	[main]	198	initializing AutoDebuggingProxy
+"
+1758025638961,"INFO	2025-09-16T12:27:18,961	8857	com.amazonaws.services.gluedi.sensei.autodebugging.AutoDebuggingProxy	[main]	203	registering spark listeners
+"
+1758025639032,"INFO	2025-09-16T12:27:19,031	8927	com.amazonaws.services.glue.launch.helpers.SparkPropsManagerHelper	[main]	113	optimizeParallelismConfigs started 
+"
+1758025639058,"DEBUG	2025-09-16T12:27:19,057	8953	com.amazonaws.services.glue.launch.helpers.SparkPropsManager	[main]	330	About to set PROXY_DISABLED and PROXY_DISABLED_V2 values false , false 
+"
+1758025639058,"INFO	2025-09-16T12:27:19,058	8954	com.amazonaws.services.glue.launch.helpers.LoggerPropsManager	[main]	31	setupLoggerProperties...
+"
+1758025639059,"INFO	2025-09-16T12:27:19,058	8954	com.amazonaws.services.glue.launch.helpers.LoggerPropsManager	[main]	64	setupDefaultLog4J2Properties...
+"
+1758025639064,"INFO	2025-09-16T12:27:19,063	8959	com.amazonaws.services.glue.FileDownloader	[main]	95	downloading /tmp/glue-12318878736810206558log4j2.properties file to destination location: /tmp/glue-job-6628531441990114465/glue-12318878736810206558log4j2.properties
+"
+1758025639732,"INFO	2025-09-16T12:27:19,731	9627	com.amazonaws.services.glue.launch.helpers.LoggerPropsManager	[main]	78	setting up the log4j.configurationFile=/tmp/glue-job-6628531441990114465/glue-12318878736810206558log4j2.properties
+"
+1758025639749,"INFO	2025-09-16T12:27:19,749	9645	com.amazonaws.services.glue.PrepareLaunch	[main]	264	Creating directory /tmp/glue-job-6628531441990114465/aws_glue_connectors
+"
+1758025639750,"INFO	2025-09-16T12:27:19,749	9645	com.amazonaws.services.glue.PrepareLaunch	[main]	264	Creating directory /tmp/glue-job-6628531441990114465/aws_glue_connectors/selected
+"
+1758025639750,"INFO	2025-09-16T12:27:19,750	9646	com.amazonaws.services.glue.PrepareLaunch	[main]	264	Creating directory /tmp/glue-job-6628531441990114465/exception_catch
+"
+1758025639751,"INFO	2025-09-16T12:27:19,750	9646	com.amazonaws.services.glue.PrepareLaunch	[main]	264	Creating directory /tmp/glue-job-6628531441990114465/amazon
+"
+1758025639751,"INFO	2025-09-16T12:27:19,750	9646	com.amazonaws.services.glue.PrepareLaunch	[main]	264	Creating directory /tmp/glue-job-6628531441990114465/amazon/certs
+"
+1758025639751,"INFO	2025-09-16T12:27:19,750	9646	com.amazonaws.services.glue.PrepareLaunch	[main]	264	Creating directory /tmp/glue-job-6628531441990114465/aws_glue_connectors/selected/native
+"
+1758025639751,"INFO	2025-09-16T12:27:19,751	9647	com.amazonaws.services.glue.PrepareLaunch	[main]	264	Creating directory /tmp/glue-job-6628531441990114465/aws_glue_connectors/marketplace
+"
+1758025639876,"INFO	2025-09-16T12:27:19,875	9771	com.amazonaws.services.glue.launch.helpers.ConnectionsManager	[main]	78	GLUE_CONNECTIVITY: attached connection types: ListBuffer()
+"
+1758025640238,"INFO	2025-09-16T12:27:20,237	10133	com.amazonaws.services.glue.PrepareLaunch	[main]	194	list of connectors to be added in classpath: List()
+"
+1758025640239,"DEBUG	2025-09-16T12:27:20,238	10134	com.amazonaws.services.glue.PrepareLaunch	[main]	206	prepareClasspath is Invoked...
+"
+1758025640239,"DEBUG	2025-09-16T12:27:20,238	10134	com.amazonaws.services.glue.launch.helpers.FileManager	[main]	46	processJarsAndFiles is invoked 
+"
+1758025640241,"INFO	2025-09-16T12:27:20,241	10137	com.amazonaws.services.glue.FileDownloader	[main]	95	downloading s3://aws-glue-assets-971996090633-us-east-1/scripts/mdm_dq_ansh.py file to destination location: /tmp/glue-job-6628531441990114465/mdm_dq_ansh.py
+"
+1758025640575,"INFO	2025-09-16T12:27:20,574	10470	com.amazonaws.services.glue.utils.AWSS3Utils$	[main]	32	Encoding S3 URI s3://aws-glue-assets-971996090633-us-east-1/scripts/mdm_dq_ansh.py
+"
+1758025640575,"INFO	2025-09-16T12:27:20,575	10471	com.amazonaws.services.glue.utils.AWSS3Utils$	[main]	37	Encoded S3 URI to s3://aws-glue-assets-971996090633-us-east-1/scripts/mdm_dq_ansh.py
+"
+1758025640597,"INFO	2025-09-16T12:27:20,597	10493	com.amazonaws.services.glue.FileDownloader	[main]	138	Download bucket: aws-glue-assets-971996090633-us-east-1 key: scripts/mdm_dq_ansh.py to /tmp/glue-job-6628531441990114465/mdm_dq_ansh.py with usingProxy: false and isProxyDisabled: true
+"
+1758025641810,"INFO	2025-09-16T12:27:21,810	11706	com.amazonaws.services.glue.launch.helpers.FileManager	[main]	119	Script should be downloaded at /tmp/glue-job-6628531441990114465/mdm_dq_ansh.py 
+"
+1758025641811,"INFO	2025-09-16T12:27:21,810	11706	com.amazonaws.services.glue.FileDownloader	[sdk-async-response-3-0]	145	Object downloaded. Details: GetObjectResponse(AcceptRanges=bytes, LastModified=2025-09-16T11:40:50Z, ContentLength=533, ETag=""26cc2f43d73a45041ff2c1984aef4649"", ContentType=application/octet-stream; charset=UTF-8, ServerSideEncryption=AES256, Metadata={})
+"
+1758025641831,"DEBUG	2025-09-16T12:27:21,830	11726	com.amazonaws.services.glue.launch.helpers.LaunchUtils$	[main]	29	File under getFilesWithExtRecursively is : /tmp/glue-job-6628531441990114465/jars/fysQQH-AwsGlueMLLibs.jar
+"
+1758025641832,"DEBUG	2025-09-16T12:27:21,831	11727	com.amazonaws.services.glue.launch.helpers.LaunchUtils$	[main]	29	File under getFilesWithExtRecursively is : /tmp/glue-job-6628531441990114465/jars/JoGwWP-aws-glue-di-package-5.0.714.jar
+"
+1758025644984,"DEBUG	2025-09-16T12:27:24,983	14879	com.amazonaws.services.glue.PythonModuleInstaller	[pool-5-thread-1]	44	Total time taken for creating virtual env 7904 in milliseconds
+"
+1758025644993,"DEBUG	2025-09-16T12:27:24,992	14888	com.amazonaws.services.glue.PythonModuleInstaller	[pool-5-thread-1]	78	Python directory file: /tmp/glue-job-6628531441990114465/python/wkUQYg-AwsGlueMLLibs.py.zip
+"
+1758025644995,"DEBUG	2025-09-16T12:27:24,994	14890	com.amazonaws.services.glue.PythonModuleInstaller	[pool-5-thread-1]	80	Found DILIbs Python module file with name: wkUQYg-AwsGlueMLLibs.py.zip
+"
+1758025644996,"DEBUG	2025-09-16T12:27:24,996	14892	com.amazonaws.services.glue.PythonModuleInstaller	[pool-5-thread-1]	78	Python directory file: /tmp/glue-job-6628531441990114465/python/dDPmKd-AWSGlueDataplanePython-5.0.714.py.zip
+"
+1758025644998,"DEBUG	2025-09-16T12:27:24,998	14894	com.amazonaws.services.glue.PythonModuleInstaller	[pool-5-thread-1]	80	Found DILIbs Python module file with name: dDPmKd-AWSGlueDataplanePython-5.0.714.py.zip
+"
+1758025645001,"DEBUG	2025-09-16T12:27:25,000	14896	com.amazonaws.services.glue.PythonModuleInstaller	[pool-5-thread-1]	246	Installing zip of wheels
+"
+1758025645002,"INFO	2025-09-16T12:27:25,002	14898	com.amazonaws.services.glue.PythonModuleInstaller	[pool-5-thread-1]	176	Command to Execute unzip /tmp/glue-job-6628531441990114465/python/dDPmKd-AWSGlueDataplanePython-5.0.714.py.zip -d /tmp/glue-job-6628531441990114465/python/dDPmKd-AWSGlueDataplanePython-5.0.714
+"
+1758025645036,"INFO	2025-09-16T12:27:25,036	14932	com.amazonaws.services.glue.PythonModuleInstaller	[pool-5-thread-1]	176	Command to Execute /usr/bin/bash /tmp/glue-job-6628531441990114465/pythonmodules/pythonmoduleinstaller.sh /tmp/glue_venv --no-index --no-deps /tmp/glue-job-6628531441990114465/python/dDPmKd-AWSGlueDataplanePython-5.0.714/amzn_awsgluelibs-5.0.714-py3-none-any.whl
+"
+1758025646572,"DEBUG	2025-09-16T12:27:26,572	16468	com.amazonaws.services.glue.PythonModuleInstaller	[pool-5-thread-1]	246	Installing zip of wheels
+"
+1758025646573,"INFO	2025-09-16T12:27:26,572	16468	com.amazonaws.services.glue.PythonModuleInstaller	[pool-5-thread-1]	176	Command to Execute unzip /tmp/glue-job-6628531441990114465/python/wkUQYg-AwsGlueMLLibs.py.zip -d /tmp/glue-job-6628531441990114465/python/wkUQYg-AwsGlueMLLibs
+"
+1758025646582,"INFO	2025-09-16T12:27:26,581	16477	com.amazonaws.services.glue.PythonModuleInstaller	[pool-5-thread-1]	176	Command to Execute /usr/bin/bash /tmp/glue-job-6628531441990114465/pythonmodules/pythonmoduleinstaller.sh /tmp/glue_venv --no-index --no-deps /tmp/glue-job-6628531441990114465/python/wkUQYg-AwsGlueMLLibs/amzn_awsgluemlpythonlibs-1.0-py3-none-any.whl
+"
+1758025649966,"INFO	2025-09-16T12:27:29,966	19862	com.amazonaws.services.glue.PythonModuleInstaller	[pool-5-thread-1]	176	Command to Execute /usr/bin/bash /tmp/glue-job-6628531441990114465/pythonmodules/createvenvzip.sh /tmp/glue_venv /tmp/glue-job-6628531441990114465_glue_venv.zip
+"
+1758025650160,"DEBUG	2025-09-16T12:27:30,159	20055	com.amazonaws.services.glue.PythonModuleInstaller	[pool-5-thread-1]	167	Time Taken for prepareVirtualEnvZipFile 195 in milliseconds
+"
+1758025650160,"INFO	2025-09-16T12:27:30,160	20056	com.amazonaws.services.glue.utils.concurrent.PythonModuleTask	[pool-5-thread-1]	39	Setting Up Virtual Env and Application Python Modules has been completed in async mode
+"
+1758025650167,"DEBUG	2025-09-16T12:27:30,166	20062	com.amazonaws.services.glue.PrepareLaunch	[main]	333	prepareCmd is Finished. About to invoke Process Launcher
+"
+1758025650171,"DEBUG	2025-09-16T12:27:30,171	20067	com.amazonaws.services.glue.launch.helpers.JVMPropertiesManager	[main]	129	Python Runner file is copied from /pythonrunner/runscript.py to /tmp/glue-job-6628531441990114465/pythonrunner/runscript.py 
+"
+1758025650174,"DEBUG	2025-09-16T12:27:30,173	20069	com.amazonaws.services.glue.PrepareLaunch	[main]	350	returnList: List(-cp, -Dlog4j.configurationFile=/tmp/glue-job-6628531441990114465/glue-12318878736810206558log4j2.properties, -server, -Xmx10g, -XX:+UseG1GC, -XX:MaxHeapFreeRatio=70, -XX:InitiatingHeapOccupancyPercent=45, -XX:OnOutOfMemoryError=/usr/bin/bash /tmp/glue-job-6628531441990114465/exception_catch/onOOMError.sh %p jr_6e6f8fcde3c06dc9ebaea884e12a3d87d3d50c2b923df8770082240c10941d1f mdm_dq_ansh true true, -Dspark.blacklist.decommissioning.enabled=true, -Dspark.metrics.conf.*.source.jvm.class=org.apache.spark.metrics.source.JvmSource, -Dspark.driver.cores=4, -Dspark.hadoop.fs.AbstractFileSystem.s3.impl=org.apache.hadoop.fs.s3.EMRFSDelegate, -Dspark.sql.shuffle.partitions=4, -Dspark.datasource.redshift.community.trace_id=jr_6e6f8fcde3c06dc9ebaea884e12a3d87d3d50c2b923df8770082240c10941d1f, -Dspark.metrics.conf.driver.source.throughput.class=org.apache.spark.metrics.source.ThroughputMetricsSource, -Dspark.metrics.conf.*.sink.GlueCloudwatch.jobRunId=jr_6e6f8fcde3c06dc9ebaea884e12a3d87d3d50c2b923df8770082240c10941d1f, -Dspark.hadoop.fs.s3bfs.impl=org.apache.hadoop.fs.s3.S3FileSystem, -Dspark.sql.parquet.output.committer.class=com.amazon.emr.committer.EmrOptimizedSparkSqlParquetOutputCommitter, -Dspark.glue.JOB_RUN_ID=jr_6e6f8fcde3c06dc9ebaea884e12a3d87d3d50c2b923df8770082240c10941d1f, -Dspark.sparkmeasure.printToStdout=false, -Dspark.executor.extraClassPath=/usr/lib/hadoop-lzo/lib/*:/usr/lib/hadoop/hadoop-aws.jar:/usr/share/aws/aws-java-sdk/*:/usr/share/aws/emr/emrfs/conf:/usr/share/aws/emr/emrfs/lib/*:/usr/share/aws/emr/emrfs/auxlib/*:/usr/share/aws/emr/goodies/lib/emr-spark-goodies.jar:/usr/share/aws/emr/goodies/lib/emr-serverless-spark-goodies.jar:/usr/share/aws/emr/security/conf:/usr/share/aws/emr/security/lib/*:/usr/share/aws/hmclient/lib/aws-glue-datacatalog-spark-client.jar:/usr/share/java/Hive-JSON-Serde/hive-openx-serde.jar:/usr/share/aws/sagemaker-spark-sdk/lib/sagemaker-spark-sdk.jar:/usr/share/aws/emr/s3select/lib/emr-s3-select-spark-connector.jar:/docker/usr/lib/hadoop-lzo/lib/*:/docker/usr/lib/hadoop/hadoop-aws.jar:/docker/usr/share/aws/aws-java-sdk/*:/docker/usr/share/aws/emr/emrfs/conf:/docker/usr/share/aws/emr/emrfs/lib/*:/docker/usr/share/aws/emr/emrfs/auxlib/*:/docker/usr/share/aws/emr/goodies/lib/emr-spark-goodies.jar:/docker/usr/share/aws/emr/security/conf:/docker/usr/share/aws/emr/security/lib/*:/docker/usr/share/aws/hmclient/lib/aws-glue-datacatalog-spark-client.jar:/docker/usr/share/java/Hive-JSON-Serde/hive-openx-serde.jar:/docker/usr/share/aws/sagemaker-spark-sdk/lib/sagemaker-spark-sdk.jar:/docker/usr/share/aws/emr/s3select/lib/emr-s3-select-spark-connector.jar:/usr/share/aws/redshift/jdbc/RedshiftJDBC.jar:/usr/share/aws/redshift/spark-redshift/lib/*:/usr/share/aws/iceberg/lib/iceberg-emr-common.jar:/usr/share/aws/iceberg/lib/iceberg-spark3-runtime.jar:/usr/share/aws/delta/lib/delta-spark.jar:/usr/share/aws/delta/lib/delta-storage.jar:/usr/lib/hudi/hudi-spark-bundle.jar, -Dspark.glueExceptionAnalysisEventLog.dir=/tmp/glue-exception-analysis-logs/, -Dspark.sql.hive.metastore.sharedPrefixes=software.amazon.awssdk.services.dynamodb, -Dspark.emr-serverless.client.describe.batch.size=100, -Dspark.hadoop.mapred.output.direct.EmrFileSystem=true, -Dspark.hadoop.fs.s3n.impl=com.amazon.ws.emr.hadoop.fs.EmrFileSystem, -Dspark.metrics.conf.*.sink.GlueCloudwatch.glueVersion=5.0, -Dspark.hadoop.fs.s3.impl=com.amazon.ws.emr.hadoop.fs.EmrFileSystem, -Dspark.hadoop.hive.metastore.warehouse.dir=/tmp/spark-warehouse, -Dspark.pyspark.python=/usr/bin/python3.11, -Dspark.executor.extraLibraryPath=/usr/lib/hadoop/lib/native:/usr/lib/hadoop-lzo/lib/native:/docker/usr/lib/hadoop/lib/native:/docker/usr/lib/hadoop-lzo/lib/native, -Dspark.executor.defaultJavaOptions=-verbose:gc -XX:+PrintGCDetails -XX:+PrintGCDateStamps -XX:+UseParallelGC -XX:InitiatingHeapOccupancyPercent=70 -XX:OnOutOfMemoryError='kill -9 %p', -Dspark.glue.nativeconnectors=, -Dspark.glue.enable-job-insights=false, -Dspark.glue.additionalParams.GLUE_LIBS_TEMP_DIR_PATH=/tmp/glue-job-6628531441990114465/, -Dspark.metrics.conf.driver.source.glue.jobPerformance.class=org.apache.spark.metrics.source.PerformanceMetricsSource, -Dspark.master=custom:jes, -Dspark.hadoop.mapreduce.output.fs.optimized.committer.enabled=true, -Dspark.decommissioning.timeout.threshold=20, -Dspark.ui.enabled=false, -Dspark.jars=/tmp/glue-job-6628531441990114465/jars/fysQQH-AwsGlueMLLibs.jar,/tmp/glue-job-6628531441990114465/jars/JoGwWP-aws-glue-di-package-5.0.714.jar, -Dspark.default.parallelism=4, -Dspark.glue.additionalParams.USER_JARS_FIRST=false, -Dspark.metrics.conf.*.source.glue.verticalScaling.class=org.apache.spark.metrics.source.VerticalScalingMetricsSource, -Dspark.executor.cores=4, -Dspark.metrics.conf.*.sink.GlueCloudwatch.legacyMetrics=true, -Dspark.submit.customResourceManager.submit.class=org.apache.spark.deploy.emrserverless.submit.EmrServerlessClientApplication, -Dspark.metrics.conf.driver.sink.AWSDILyra.class=org.apache.spark.metrics.sink.AWSDILyraSink, -Dspark.dynamicAllocation.initialExecutors=3, -Dspark.archives=/tmp/glue-job-6628531441990114465_glue_venv.zip#python_environment, -Dspark.glue.enable-observability-metrics=true, -Dspark.submit.deployMode=client, -Dspark.hadoop.fs.s3.maxConnections=500, -Dspark.ui.custom.executor.log.url=/logs/{{CONTAINER_ID}}/{{FILE_NAME}}.gz, -Dspark.dynamicAllocation.shuffleTracking.enabled=true, -Dspark.metrics.conf.driver.source.AWSDILyra.class=org.apache.spark.metrics.source.AWSDILyraSource, -Dspark.metrics.conf.*.sink.GlueCloudwatch.proxyPort=-1, -Dspark.glue.scriptName=mdm_dq_ansh.py, -Dspark.metrics.conf.*.sink.GlueCloudwatch.class=org.apache.spark.metrics.sink.GlueCloudwatchSink, -Dspark.glue.GLUE_VERSION=5.0, -Dspark.resourceManager.cleanupExpiredHost=true, -Dspark.executorEnv.PYTHONPATH=data_quality_bcbsa-1.0-py3-none-any.whl:python_environment, -Dspark.hadoop.mapreduce.fileoutputcommitter.marksuccessfuljobs=false, -Dspark.files.fetchFailure.unRegisterOutputOnHost=true, -Dspark.glueAppInsightsLog.dir=/tmp/glue-app-insights-logs/, -Dspark.glue.jobLanguage=python, -Dspark.metrics.conf.*.sink.GlueCloudwatch.proxyHost=null, -Dspark.glue.glue-python-libs-dir=/tmp/glue-job-6628531441990114465/python, -Dspark.files.overwrite=true, -Dspark.glue.additionalParams.PROXY_DISABLED_V2=false, -Dspark.glue.glue-jars-dir=/tmp/glue-job-6628531441990114465/jars, -Dspark.network.timeout=600, -Dspark.glue.glue-libs-temp-dir-path=/tmp/glue-job-6628531441990114465, -Dspark.dynamicAllocation.minExecutors=1, -Dspark.eventLog.enabled=true, -Dspark.glue.additionalParams.PROXY_DISABLED=false, -Dspark.metrics.conf.*.source.system.class=org.apache.spark.metrics.source.SystemMetricsSource, -Dspark.eventLog.dir=file:///var/log/spark/apps, -Dspark.glue.GLUE_TASK_GROUP_ID=tg-fb64f5aeab9c101e04040d975a6a3e50aa202c09, -Dspark.driver.bindAddress=172.39.7.11, -Dspark.blacklist.decommissioning.timeout=1h, -Dspark.files=/tmp/glue-job-6628531441990114465/extra-py-files/data_quality_bcbsa-1.0-py3-none-any.whl, -Dspark.sql.emr.internal.extensions=com.amazonaws.emr.spark.EmrSparkSessionExtensions, -Dspark.hadoop.fs.s3.buffer.dir=/tmp/hadoop/s3, -Dspark.history.fs.logDirectory=file:///var/log/spark/apps, -Dspark.glue.USE_PROXY=false, -Dspark.app.name=nativespark-mdm_dq_ansh-jr_6e6f8fcde3c06dc9ebaea884e12a3d87d3d50c2b923df8770082240c10941d1f, -Dspark.extraListeners=com.amazonaws.services.gluedi.sensei.autodebugging.listeners.AutoDebuggingListener,glue.ch.cern.sparkmeasure.FlightRecorderStageMetrics,glue.ch.cern.sparkmeasure.FlightRecorderTaskMetrics, -Dspark.hadoop.fs.s3a.connection.maximum=500, -Dspark.hadoop.mapred.output.direct.NativeS3FileSystem=true, -Dspark.hadoop.hive.metastore.client.factory.class=com.amazonaws.glue.catalog.metastore.AWSGlueDataCatalogHiveClientFactory, -Dspark.metrics.conf.driver.source.aggregate.class=org.apache.spark.metrics.source.AggregateMetricsSource, -Dspark.dynamicAllocation.maxExecutors=1, -Dspark.sql.catalogImplementation=hive, -Dspark.stage.attempt.ignoreOnDecommissionFetchFailure=true, -Dspark.executor.instances=1, -Dspark.hadoop.fs.s3.customAWSCredentialsProvider=com.amazonaws.auth.DefaultAWSCredentialsProviderChain, -Dspark.metrics.conf.driver.source.glue.resourceUtilization.class=org.apache.spark.metrics.source.ResourceUtilizationMetricsSource, -Dspark.hadoop.fs.s3a.aws.credentials.provider=software.amazon.awssdk.auth.credentials.DefaultCredentialsProvider, -Dspark.hadoop.fs.s3.getObject.initialSocketTimeoutMilliseconds=2000, -Dspark.authenticate=true, -Dspark.dynamicAllocation.enabled=false, -Dspark.hadoop.mapreduce.fileoutputcommitter.algorithm.version.emr_internal_use_only.EmrFileSystem=2, -Dspark.shuffle.service.enabled=false, -Dspark.glue.JOB_NAME=mdm_dq_ansh, -Dspark.metrics.conf.*.sink.GlueCloudwatch.jobName=mdm_dq_ansh, -Dspark.sparkmeasure.outputFormat=json, -Dspark.hadoop.fs.defaultFS=file:///, -Dspark.hadoop.lakeformation.credentials.url=http://localhost:9998/lakeformationcredentials, -Dspark.metrics.conf.driver.source.glue.jobPerformance.skewnessFactor=5, -Dspark.glue.additionalParams.ADDITIONAL_GLUE_JDK_OPTS=-Xmx10g -XX:+UseG1GC -XX:MaxHeapFreeRatio=70 -XX:InitiatingHeapOccupancyPercent=45, -Dspark.emr-serverless.client.create.batch.size=100, -Dspark.sql.parquet.fs.optimized.committer.optimization-enabled=true, -Dspark.rpc.askTimeout=600, -Dspark.metrics.conf.*.source.s3.class=org.apache.spark.metrics.source.S3FileSystemSource, -Dspark.hadoop.mapreduce.fileoutputcommitter.cleanup-failures.ignored.emr_internal_use_only.EmrFileSystem=true, -Dspark.driver.extraLibraryPath=/usr/lib/hadoop/lib/native:/usr/lib/hadoop-lzo/lib/native:/docker/usr/lib/hadoop/lib/native:/docker/usr/lib/hadoop-lzo/lib/native, -Dspark.driver.host=172.39.7.11, -Dspark.history.ui.port=18080, -Dspark.metrics.conf.*.sink.GlueCloudwatch.namespace=Glue, -Dspark.executor.memory=10g, -Dspark.driver.defaultJavaOptions=-XX:OnOutOfMemoryError='kill -9 %p', -Dspark.pyFiles=/tmp/glue-job-6628531441990114465/extra-py-files/data_quality_bcbsa-1.0-py3-none-any.whl, -Dspark.driver.memory=10g, -Dspark.glue.GLUE_COMMAND_CRITERIA=glueetl, -Dspark.unsafe.sorter.spill.read.ahead.enabled=false, -Dspark.hadoop.parquet.enable.summary-metadata=false, -Dspark.driver.extraClassPath=/usr/lib/livy/rsc-jars/*:/usr/lib/livy/repl_2.12-jars/*:/usr/lib/hadoop-lzo/lib/*:/usr/lib/hadoop/hadoop-aws.jar:/usr/share/aws/aws-java-sdk/*:/usr/share/aws/emr/emrfs/conf:/usr/share/aws/emr/emrfs/lib/*:/usr/share/aws/emr/emrfs/auxlib/*:/usr/share/aws/emr/goodies/lib/emr-spark-goodies.jar:/usr/share/aws/emr/goodies/lib/emr-serverless-spark-goodies.jar:/usr/share/aws/emr/security/conf:/usr/share/aws/emr/security/lib/*:/usr/share/aws/hmclient/lib/aws-glue-datacatalog-spark-client.jar:/usr/share/java/Hive-JSON-Serde/hive-openx-serde.jar:/usr/share/aws/sagemaker-spark-sdk/lib/sagemaker-spark-sdk.jar:/usr/share/aws/emr/s3select/lib/emr-s3-select-spark-connector.jar:/docker/usr/lib/hadoop-lzo/lib/*:/docker/usr/lib/hadoop/hadoop-aws.jar:/docker/usr/share/aws/aws-java-sdk/*:/docker/usr/share/aws/emr/emrfs/conf:/docker/usr/share/aws/emr/emrfs/lib/*:/docker/usr/share/aws/emr/emrfs/auxlib/*:/docker/usr/share/aws/emr/goodies/lib/emr-spark-goodies.jar:/docker/usr/share/aws/emr/security/conf:/docker/usr/share/aws/emr/security/lib/*:/docker/usr/share/aws/hmclient/lib/aws-glue-datacatalog-spark-client.jar:/docker/usr/share/java/Hive-JSON-Serde/hive-openx-serde.jar:/docker/usr/share/aws/sagemaker-spark-sdk/lib/sagemaker-spark-sdk.jar:/docker/usr/share/aws/emr/s3select/lib/emr-s3-select-spark-connector.jar:/usr/share/aws/redshift/jdbc/RedshiftJDBC.jar:/usr/share/aws/redshift/spark-redshift/lib/*:/usr/share/aws/iceberg/lib/iceberg-emr-common.jar:/usr/share/aws/iceberg/lib/iceberg-spark3-runtime.jar:/usr/share/aws/delta/lib/delta-spark.jar:/usr/share/aws/delta/lib/delta-storage.jar:/usr/lib/hudi/hudi-spark-bundle.jar, -Dspark.emr-serverless.client.release.batch.size=100, -Dspark.files.useFetchCache=false, com.amazonaws.services.glue.ProcessLauncher, --launch-class, org.apache.spark.deploy.PythonRunner, /tmp/glue-job-6628531441990114465/pythonrunner/runscript.py, /tmp/glue-job-6628531441990114465/extra-py-files/data_quality_bcbsa-1.0-py3-none-any.whl, /tmp/glue-job-6628531441990114465/mdm_dq_ansh.py, --conf_file, s3://test-ansh-bcbsa/config/config.json, --internal-lib-urls, --JOB_ID, j_3852048bb6eb5d08821b5e9ff0da551ccb661449819a2f168330ec6179d1beb8, --spark-event-logs-path, s3://aws-glue-assets-971996090633-us-east-1/sparkHistoryLogs/, --file_type, CIHQ, --JOB_NAME, mdm_dq_ansh, true, --glue-di-packages-correlation-ids, 20250908-162851_,20250908-162851_,6359168764,6359168764, --job-bookmark-option, job-bookmark-disable, true, --JOB_RUN_ID, jr_6e6f8fcde3c06dc9ebaea884e12a3d87d3d50c2b923df8770082240c10941d1f, --tenant-internal, glue, --TempDir, s3://aws-glue-assets-971996090633-us-east-1/temporary/)
+INFO	2025-09-16T12:27:30,174	20070	com.amazonaws.services.glue.utils.concurrent.GlueConcurrentAsyncProcessingService	[main]	50	shutdownAsyncProcessing has been Started
+DEBUG	2025-09-16T12:27:30,174	20070	com.amazonaws.services.glue.utils.concurrent.GlueConcurrentAsyncProcessingService	[main]	56	Future Queue Size is :: 0
+INFO	2025-09-16T12:27:30,174	20070	com.amazonaws.services.glue.utils.concurrent.GlueConcurrentAsyncProcessingService	[main]	76	shutdownAsyncProcessing has been completed
+"
+1758025650178,"Running autoDebugger shutdown hook.
+"
+1758025650576,"Launching ...
+"
+1758025650579,"Tue Sep 16 12:27:30 UTC 2025
+"
+1758025653489,"INFO	2025-09-16T12:27:33,486	2815	com.amazonaws.services.glue.SparkUICleaner	[main]	60	SparkUILogFileCleanerThread started
+"
+1758025653497,"INFO	2025-09-16T12:27:33,496	2825	com.amazonaws.services.glue.LogPusher	[main]	60	standardLogging: false - logs will be written with job run ID or session ID
+"
+1758025653497,"INFO	2025-09-16T12:27:33,497	2826	com.amazonaws.services.glue.LogPusher	[main]	60	legacyLogging: false - logs will be written with spark application ID
+"
+1758025654366,"INFO	2025-09-16T12:27:34,366	3695	com.amazon.ws.emr.hadoop.fs.util.PlatformInfo	[main]	56	Unable to read clusterId from http://localhost:8321/configuration, trying extra instance data file: /var/lib/instance-controller/extraInstanceData.json
+"
+1758025654368,"INFO	2025-09-16T12:27:34,367	3696	com.amazon.ws.emr.hadoop.fs.util.PlatformInfo	[main]	63	Unable to read clusterId from /var/lib/instance-controller/extraInstanceData.json, trying EMR job-flow data file: /var/lib/info/job-flow.json
+"
+1758025654369,"INFO	2025-09-16T12:27:34,368	3697	com.amazon.ws.emr.hadoop.fs.util.PlatformInfo	[main]	71	Unable to read clusterId from /var/lib/info/job-flow.json, out of places to look
+"
+1758025654945,"WARN	2025-09-16T12:27:34,944	4273	com.amazonaws.util.VersionInfoUtils	[main]	85	The AWS SDK for Java 1.x entered maintenance mode starting July 31, 2024 and will reach end of support on December 31, 2025. For more information, see https://aws.amazon.com/blogs/developer/the-aws-sdk-for-java-1-x-is-in-maintenance-mode-effective-july-31-2024/
+You can print where on the file system the AWS SDK for Java 1.x core runtime is located by setting the AWS_JAVA_V1_PRINT_LOCATION environment variable or aws.java.v1.printLocation system property to 'true'.
+This message can be disabled by setting the AWS_JAVA_V1_DISABLE_DEPRECATION_ANNOUNCEMENT environment variable or aws.java.v1.disableDeprecationAnnouncement system property to 'true'.
+The AWS SDK for Java 1.x is being used here:
+at java.base/java.lang.Thread.getStackTrace(Thread.java:1619)
+at com.amazonaws.util.VersionInfoUtils.printDeprecationAnnouncement(VersionInfoUtils.java:81)
+at com.amazonaws.util.VersionInfoUtils.<clinit>(VersionInfoUtils.java:59)
+at com.amazonaws.internal.EC2ResourceFetcher.<clinit>(EC2ResourceFetcher.java:44)
+at com.amazonaws.auth.InstanceMetadataServiceCredentialsFetcher.<init>(InstanceMetadataServiceCredentialsFetcher.java:38)
+at com.amazonaws.auth.InstanceProfileCredentialsProvider.<init>(InstanceProfileCredentialsProvider.java:111)
+at com.amazonaws.auth.InstanceProfileCredentialsProvider.<init>(InstanceProfileCredentialsProvider.java:91)
+at com.amazonaws.auth.InstanceProfileCredentialsProvider.<init>(InstanceProfileCredentialsProvider.java:75)
+at com.amazonaws.auth.InstanceProfileCredentialsProvider.<clinit>(InstanceProfileCredentialsProvider.java:58)
+at com.amazonaws.auth.EC2ContainerCredentialsProviderWrapper.initializeProvider(EC2ContainerCredentialsProviderWrapper.java:66)
+at com.amazonaws.auth.EC2ContainerCredentialsProviderWrapper.<init>(EC2ContainerCredentialsProviderWrapper.java:55)
+at com.amazonaws.auth.DefaultAWSCredentialsProviderChain.<init>(DefaultAWSCredentialsProviderChain.java:60)
+at com.amazonaws.auth.DefaultAWSCredentialsProviderChain.<clinit>(DefaultAWSCredentialsProviderChain.java:54)
+at java.base/java.lang.Class.forName0(Native Method)
+at java.base/java.lang.Class.forName(Class.java:375)
+at com.amazon.ws.emr.hadoop.fs.guice.DefaultAWSCredentialsProviderFactory.getCustomAwsCredentialsProvider(DefaultAWSCredentialsProviderFactory.java:61)
+at com.amazon.ws.emr.hadoop.fs.guice.DefaultAWSCredentialsProviderFactory.getAwsCredentialsProviderChain(DefaultAWSCredentialsProviderFactory.java:32)
+at com.amazon.ws.emr.hadoop.fs.guice.DefaultAWSCredentialsProviderFactory.getAwsCredentialsProvider(DefaultAWSCredentialsProviderFactory.java:26)
+at com.amazon.ws.emr.hadoop.fs.guice.EmrFSProdModule.getAwsCredentialsProvider(EmrFSProdModule.java:81)
+at com.amazon.ws.emr.hadoop.fs.guice.EmrFSProdModule.createAmazonS3LiteClient(EmrFSProdModule.java:93)
+at com.amazon.ws.emr.hadoop.fs.guice.EmrFSProdModule.createAmazonS3Lite(EmrFSProdModule.java:266)
+at com.amazon.ws.emr.hadoop.fs.guice.EmrFSBaseModule.provideAmazonS3Lite(EmrFSBaseModule.java:112)
+at com.amazon.ws.emr.hadoop.fs.guice.EmrFSBaseModule$$FastClassByGuice$$1597689.GUICE$TRAMPOLINE(<generated>)
+at com.amazon.ws.emr.hadoop.fs.guice.EmrFSBaseModule$$FastClassByGuice$$1597689.apply(<generated>)
+at com.amazon.ws.emr.hadoop.fs.shaded.com.google.inject.internal.ProviderMethod$FastClassProviderMethod.doProvision(ProviderMethod.java:260)
+at com.amazon.ws.emr.hadoop.fs.shaded.com.google.inject.internal.ProviderMethod.doProvision(ProviderMethod.java:171)
+at com.amazon.ws.emr.hadoop.fs.shaded.com.google.inject.internal.InternalProviderInstanceBindingImpl$CyclicFactory.provision(InternalProviderInstanceBindingImpl.java:185)
+at com.amazon.ws.emr.hadoop.fs.shaded.com.google.inject.internal.InternalProviderInstanceBindingImpl$CyclicFactory.get(InternalProviderInstanceBindingImpl.java:162)
+at com.amazon.ws.emr.hadoop.fs.shaded.com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+at com.amazon.ws.emr.hadoop.fs.shaded.com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:169)
+at com.amazon.ws.emr.hadoop.fs.shaded.com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45)
+at com.amazon.ws.emr.hadoop.fs.shaded.com.google.inject.internal.SingleParameterInjector.inject(SingleParameterInjector.java:40)
+at com.amazon.ws.emr.hadoop.fs.shaded.com.google.inject.internal.SingleParameterInjector.getAll(SingleParameterInjector.java:60)
+at com.amazon.ws.emr.hadoop.fs.shaded.com.google.inject.internal.ProviderMethod.doProvision(ProviderMethod.java:171)
+at com.amazon.ws.emr.hadoop.fs.shaded.com.google.inject.internal.InternalProviderInstanceBindingImpl$CyclicFactory.provision(InternalProviderInstanceBindingImpl.java:185)
+at com.amazon.ws.emr.hadoop.fs.shaded.com.google.inject.internal.InternalProviderInstanceBindingImpl$CyclicFactory.get(InternalProviderInstanceBindingImpl.java:162)
+at com.amazon.ws.emr.hadoop.fs.shaded.com.google.inject.internal.ProviderToInternalFactoryAdapter.get(ProviderToInternalFactoryAdapter.java:40)
+at com.amazon.ws.emr.hadoop.fs.shaded.com.google.inject.internal.SingletonScope$1.get(SingletonScope.java:169)
+at com.amazon.ws.emr.hadoop.fs.shaded.com.google.inject.internal.InternalFactoryToProviderAdapter.get(InternalFactoryToProviderAdapter.java:45)
+at com.amazon.ws.emr.hadoop.fs.shaded.com.google.inject.internal.SingleFieldInjector.inject(SingleFieldInjector.java:50)
+at com.amazon.ws.emr.hadoop.fs.shaded.com.google.inject.internal.MembersInjectorImpl.injectMembers(MembersInjectorImpl.java:146)
+at com.amazon.ws.emr.hadoop.fs.shaded.com.google.inject.internal.ConstructorInjector.provision(ConstructorInjector.java:124)
+at com.amazon.ws.emr.hadoop.fs.shaded.com.google.inject.internal.ConstructorInjector.construct(ConstructorInjector.java:91)
+at com.amazon.ws.emr.hadoop.fs.shaded.com.google.inject.internal.ConstructorBindingImpl$Factory.get(ConstructorBindingImpl.java:300)
+at com.amazon.ws.emr.hadoop.fs.shaded.com.google.inject.internal.FactoryProxy.get(FactoryProxy.java:60)
+at com.amazon.ws.emr.hadoop.fs.shaded.com.google.inject.internal.InjectorImpl$1.get(InjectorImpl.java:1101)
+at com.amazon.ws.emr.hadoop.fs.shaded.com.google.inject.internal.InjectorImpl.getInstance(InjectorImpl.java:1134)
+at com.amazon.ws.emr.hadoop.fs.EmrFileSystem.initialize(EmrFileSystem.java:95)
+at org.apache.hadoop.fs.FileSystem.createFileSystem(FileSystem.java:3670)
+at org.apache.hadoop.fs.FileSystem.access$300(FileSystem.java:171)
+at org.apache.hadoop.fs.FileSystem$Cache.getInternal(FileSystem.java:3771)
+at org.apache.hadoop.fs.FileSystem$Cache.get(FileSystem.java:3722)
+at org.apache.hadoop.fs.FileSystem.get(FileSystem.java:564)
+at org.apache.hadoop.fs.Path.getFileSystem(Path.java:374)
+at com.amazonaws.services.glue.LogPusher.<init>(LogPusher.scala:25)
+at com.amazonaws.services.glue.ProcessLauncher.$anonfun$logPusher$3(ProcessLauncher.scala:256)
+at scala.Option.map(Option.scala:230)
+at com.amazonaws.services.glue.ProcessLauncher.$anonfun$logPusher$2(ProcessLauncher.scala:222)
+at scala.Option$WithFilter.flatMap(Option.scala:271)
+at com.amazonaws.services.glue.ProcessLauncher.<init>(ProcessLauncher.scala:213)
+at com.amazonaws.services.glue.ProcessLauncher.<init>(ProcessLauncher.scala:194)
+at com.amazonaws.services.glue.ProcessLauncher$.main(ProcessLauncher.scala:34)
+at com.amazonaws.services.glue.ProcessLauncher.main(ProcessLauncher.scala)
+"
+1758025655260,"INFO	2025-09-16T12:27:35,260	4589	com.amazon.ws.emr.hadoop.fs.guice.DefaultAWSCredentialsProviderFactory	[main]	72	Unable to create provider using constructor: DefaultAWSCredentialsProviderChain(java.net.URI, org.apache.hadoop.conf.Configuration)
+"
+1758025655411,"INFO	2025-09-16T12:27:35,411	4740	com.amazon.ws.emr.hadoop.fs.util.ClientConfigurationFactory	[main]	85	Set initial getObject socket timeout to 2000 ms.
+"
+1758025655983,"INFO	2025-09-16T12:27:35,982	5311	com.amazonaws.services.glue.utils.EndpointConfig$	[main]	36	 STAGE is prod
+"
+1758025656234,"INFO	2025-09-16T12:27:36,234	5563	com.amazonaws.services.glue.utils.EndpointConfig$	[main]	90	Endpoints: {credentials_provider=com.amazonaws.auth.DefaultAWSCredentialsProviderChain, glue.endpoint=https://glue.us-east-1.amazonaws.com, lakeformation.endpoint=https://lakeformation.us-east-1.amazonaws.com, jes.endpoint=https://glue-jes-prod.us-east-1.amazonaws.com, region=us-east-1}
+"
+1758025656300,"INFO	2025-09-16T12:27:36,300	5629	com.amazonaws.services.gluedi.sensei.autodebugging.AutoDebuggingProxy	[main]	198	initializing AutoDebuggingProxy
+"
+1758025656342,"INFO	2025-09-16T12:27:36,341	5670	com.amazonaws.services.glue.SafeLogging	[main]	60	Initializing logging subsystem
+"
+1758025658812,"INFO	2025-09-16T12:27:38,812	8141	org.apache.spark.emr.EMRParamSideChannel	[Thread-10]	177	Setting FGAC mode to false
+"
+1758025658828,"INFO	2025-09-16T12:27:38,827	8156	org.apache.spark.SparkContext	[Thread-10]	60	Running Spark version 3.5.4-amzn-0
+"
+1758025658829,"INFO	2025-09-16T12:27:38,829	8158	org.apache.spark.SparkContext	[Thread-10]	60	OS info Linux, 5.10.240-238.959.amzn2.x86_64, amd64
+"
+1758025658830,"INFO	2025-09-16T12:27:38,829	8158	org.apache.spark.SparkContext	[Thread-10]	60	Java version 17.0.16
+"
+1758025658867,"INFO	2025-09-16T12:27:38,867	8196	org.apache.spark.resource.ResourceUtils	[Thread-10]	60	==============================================================
+"
+1758025658868,"INFO	2025-09-16T12:27:38,867	8196	org.apache.spark.resource.ResourceUtils	[Thread-10]	60	No custom resources configured for spark.driver.
+"
+1758025658869,"INFO	2025-09-16T12:27:38,868	8197	org.apache.spark.resource.ResourceUtils	[Thread-10]	60	==============================================================
+INFO	2025-09-16T12:27:38,868	8197	org.apache.spark.SparkContext	[Thread-10]	60	Submitted application: data_quality_check
+"
+1758025658897,"INFO	2025-09-16T12:27:38,896	8225	org.apache.spark.resource.ResourceProfile	[Thread-10]	60	Default ResourceProfile created, executor resources: Map(executorType -> name: executorType, amount: 1, script: , vendor: , cores -> name: cores, amount: 4, script: , vendor: , memory -> name: memory, amount: 10240, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+"
+1758025658904,"INFO	2025-09-16T12:27:38,903	8232	org.apache.spark.resource.ResourceProfile	[Thread-10]	60	Limiting resource is cpus at 4 tasks per executor
+"
+1758025658905,"INFO	2025-09-16T12:27:38,905	8234	org.apache.spark.resource.ResourceProfileManager	[Thread-10]	60	Added ResourceProfile id: 0
+"
+1758025658908,"INFO	2025-09-16T12:27:38,908	8237	org.apache.spark.resource.ResourceProfile	[Thread-10]	60	User executor ResourceProfile created, executor resources: Map(executorType -> name: executorType, amount: 1, script: , vendor: , cores -> name: cores, amount: 4, script: , vendor: , memory -> name: memory, amount: 10240, script: , vendor: , offHeap -> name: offHeap, amount: 0, script: , vendor: ), task resources: Map(cpus -> name: cpus, amount: 1.0)
+"
+1758025658909,"INFO	2025-09-16T12:27:38,909	8238	org.apache.spark.resource.ResourceProfile	[Thread-10]	60	Limiting resource is cpus at 4 tasks per executor
+"
+1758025658913,"INFO	2025-09-16T12:27:38,909	8238	org.apache.spark.resource.ResourceProfileManager	[Thread-10]	60	Added ResourceProfile id: 1
+"
+1758025659009,"INFO	2025-09-16T12:27:39,008	8337	org.apache.spark.SecurityManager	[Thread-10]	60	Changing view acls to: hadoop
+"
+1758025659010,"INFO	2025-09-16T12:27:39,009	8338	org.apache.spark.SecurityManager	[Thread-10]	60	Changing modify acls to: hadoop
+"
+1758025659010,"INFO	2025-09-16T12:27:39,010	8339	org.apache.spark.SecurityManager	[Thread-10]	60	Changing view acls groups to: 
+"
+1758025659011,"INFO	2025-09-16T12:27:39,010	8339	org.apache.spark.SecurityManager	[Thread-10]	60	Changing modify acls groups to: 
+"
+1758025659012,"INFO	2025-09-16T12:27:39,011	8340	org.apache.spark.SecurityManager	[Thread-10]	60	SecurityManager: authentication enabled; ui acls disabled; users with view permissions: hadoop; groups with view permissions: EMPTY; users with modify permissions: hadoop; groups with modify permissions: EMPTY
+"
+1758025659316,"INFO	2025-09-16T12:27:39,316	8645	org.apache.spark.util.Utils	[Thread-10]	60	Successfully started service 'sparkDriver' on port 33529.
+"
+1758025659375,"INFO	2025-09-16T12:27:39,374	8703	org.apache.spark.SparkEnv	[Thread-10]	60	Registering MapOutputTracker
+"
+1758025659438,"INFO	2025-09-16T12:27:39,437	8766	org.apache.spark.SparkEnv	[Thread-10]	60	Registering BlockManagerMaster
+"
+1758025659475,"INFO	2025-09-16T12:27:39,473	8802	org.apache.spark.storage.BlockManagerMasterEndpoint	[Thread-10]	60	Using org.apache.spark.storage.DefaultTopologyMapper for getting topology information
+"
+1758025659476,"INFO	2025-09-16T12:27:39,475	8804	org.apache.spark.storage.BlockManagerMasterEndpoint	[Thread-10]	60	BlockManagerMasterEndpoint up
+"
+1758025659490,"INFO	2025-09-16T12:27:39,490	8819	org.apache.spark.SparkEnv	[Thread-10]	60	Registering BlockManagerMasterHeartbeat
+"
+1758025659511,"INFO	2025-09-16T12:27:39,510	8839	org.apache.spark.storage.DiskBlockManager	[Thread-10]	60	Created local directory at /tmp/blockmgr-88d02168-bd31-40c4-8f34-be0f0267eaed
+"
+1758025659530,"INFO	2025-09-16T12:27:39,529	8858	org.apache.spark.storage.memory.MemoryStore	[Thread-10]	60	MemoryStore started with capacity 5.8 GiB
+"
+1758025659553,"INFO	2025-09-16T12:27:39,552	8881	org.apache.spark.SparkEnv	[Thread-10]	60	Registering OutputCommitCoordinator
+"
+1758025659560,"INFO	2025-09-16T12:27:39,560	8889	org.apache.spark.subresultcache.SubResultCacheManager	[Thread-10]	60	Sub-result caches are disabled.
+"
+1758025659600,"INFO	2025-09-16T12:27:39,600	8929	org.apache.spark.SparkContext	[Thread-10]	60	Added JAR /tmp/glue-job-6628531441990114465/jars/fysQQH-AwsGlueMLLibs.jar at spark://172.39.7.11:33529/jars/fysQQH-AwsGlueMLLibs.jar with timestamp 1758025658815
+"
+1758025659602,"INFO	2025-09-16T12:27:39,602	8931	org.apache.spark.SparkContext	[Thread-10]	60	Added JAR /tmp/glue-job-6628531441990114465/jars/JoGwWP-aws-glue-di-package-5.0.714.jar at spark://172.39.7.11:33529/jars/JoGwWP-aws-glue-di-package-5.0.714.jar with timestamp 1758025658815
+"
+1758025659610,"INFO	2025-09-16T12:27:39,610	8939	org.apache.spark.SparkContext	[Thread-10]	60	Added file /tmp/glue-job-6628531441990114465/extra-py-files/data_quality_bcbsa-1.0-py3-none-any.whl at spark://172.39.7.11:33529/files/data_quality_bcbsa-1.0-py3-none-any.whl with timestamp 1758025658815
+"
+1758025659612,"INFO	2025-09-16T12:27:39,611	8940	org.apache.spark.util.Utils	[Thread-10]	60	Copying /tmp/glue-job-6628531441990114465/extra-py-files/data_quality_bcbsa-1.0-py3-none-any.whl to /tmp/spark-217f6eac-d438-4a09-a634-4b68751a46c5/userFiles-dadfb0c1-93fc-4230-adcd-f5199f32061e/data_quality_bcbsa-1.0-py3-none-any.whl
+"
+1758025659700,"INFO	2025-09-16T12:27:39,699	9028	org.apache.spark.SparkContext	[Thread-10]	60	Added archive /tmp/glue-job-6628531441990114465_glue_venv.zip#python_environment at spark://172.39.7.11:33529/files/glue-job-6628531441990114465_glue_venv.zip with timestamp 1758025658815
+"
+1758025659700,"INFO	2025-09-16T12:27:39,700	9029	org.apache.spark.util.Utils	[Thread-10]	60	Copying /tmp/glue-job-6628531441990114465_glue_venv.zip to /tmp/spark-63c7dae7-57e1-42a2-9cb9-03af0357ed97/glue-job-6628531441990114465_glue_venv.zip
+"
+1758025659718,"INFO	2025-09-16T12:27:39,717	9046	org.apache.spark.SparkContext	[Thread-10]	60	Unpacking an archive /tmp/glue-job-6628531441990114465_glue_venv.zip#python_environment from /tmp/spark-63c7dae7-57e1-42a2-9cb9-03af0357ed97/glue-job-6628531441990114465_glue_venv.zip to /tmp/spark-217f6eac-d438-4a09-a634-4b68751a46c5/userFiles-dadfb0c1-93fc-4230-adcd-f5199f32061e/python_environment
+"
+1758025660475,"INFO	2025-09-16T12:27:40,474	9803	org.apache.spark.scheduler.cluster.glue.JESClusterManager	[Thread-10]	121	Python path for executors: data_quality_bcbsa-1.0-py3-none-any.whl:python_environment
+"
+1758025660478,"INFO	2025-09-16T12:27:40,477	9806	org.apache.spark.deploy.glue.client.GlueRMClientFactory	[Thread-10]	60	JESClusterManager: Initializing JES client with endpoint: https://glue-jes-prod.us-east-1.amazonaws.com
+"
+1758025661137,"INFO	2025-09-16T12:27:41,136	10465	org.apache.spark.scheduler.cluster.glue.JESSchedulerBackend	[Thread-10]	60	JESSchedulerBackend
+"
+1758025661199,"INFO	2025-09-16T12:27:41,198	10527	org.apache.spark.scheduler.cluster.glue.JESSchedulerBackend	[Thread-10]	60	Starting JES Scheduler Backend.
+"
+1758025661204,"INFO	2025-09-16T12:27:41,204	10533	org.apache.spark.scheduler.cluster.glue.JESSchedulerBackend	[Thread-10]	60	Set total expected executors: rpId: 0, numExecs: 1
+"
+1758025661207,"INFO	2025-09-16T12:27:41,206	10535	org.apache.spark.scheduler.cluster.glue.JESSchedulerBackend	[Thread-10]	60	Initial executors are 1
+"
+1758025661216,"INFO	2025-09-16T12:27:41,216	10545	org.apache.spark.scheduler.cluster.glue.JESSchedulerBackend	[executorAllocator]	60	Creating executors task for application spark-application-1758025661129 with resource profile 0
+"
+1758025661236,"INFO	2025-09-16T12:27:41,234	10563	org.apache.spark.scheduler.cluster.glue.allocator.ExecutorTaskAllocator	[executorAllocator]	60	Creating new task with arguments List(--driver-url, spark://CoarseGrainedScheduler@172.39.7.11:33529, --executor-id, 1, --app-id, spark-application-1758025661129, --cores, 4, --resourceProfileId, 0)
+"
+1758025661238,"INFO	2025-09-16T12:27:41,238	10567	org.apache.spark.deploy.glue.client.GlueTaskGroupRMClient	[executorAllocator]	60	creating executor task for executor 1; clientToken gr_tg-fb64f5aeab9c101e04040d975a6a3e50aa202c09_e_1_a_spark-application-1758025661129_p_1
+"
+1758025661255,"INFO	2025-09-16T12:27:41,255	10584	org.apache.spark.util.Utils	[Thread-10]	60	Successfully started service 'org.apache.spark.network.netty.NettyBlockTransferService' on port 42805.
+"
+1758025661256,"INFO	2025-09-16T12:27:41,255	10584	org.apache.spark.network.netty.NettyBlockTransferService	[Thread-10]	88	Server created on 172.39.7.11:42805
+"
+1758025661258,"INFO	2025-09-16T12:27:41,258	10587	org.apache.spark.storage.BlockManager	[Thread-10]	60	Using org.apache.spark.storage.RandomBlockReplicationPolicy for block replication policy
+"
+1758025661261,"INFO	2025-09-16T12:27:41,260	10589	org.apache.spark.deploy.glue.client.GlueTaskGroupRMClient	[executorAllocator]	60	Sending request to JES
+"
+1758025661269,"INFO	2025-09-16T12:27:41,268	10597	org.apache.spark.storage.BlockManagerMaster	[Thread-10]	60	Registering BlockManager BlockManagerId(driver, 172.39.7.11, 42805, None)
+"
+1758025661274,"INFO	2025-09-16T12:27:41,274	10603	org.apache.spark.storage.BlockManagerMasterEndpoint	[dispatcher-BlockManagerMaster]	60	Registering block manager 172.39.7.11:42805 with 5.8 GiB RAM, BlockManagerId(driver, 172.39.7.11, 42805, None)
+"
+1758025661277,"INFO	2025-09-16T12:27:41,277	10606	org.apache.spark.storage.BlockManagerMaster	[Thread-10]	60	Registered BlockManager BlockManagerId(driver, 172.39.7.11, 42805, None)
+"
+1758025661278,"INFO	2025-09-16T12:27:41,277	10606	org.apache.spark.storage.BlockManager	[Thread-10]	60	Initialized BlockManager: BlockManagerId(driver, 172.39.7.11, 42805, None)
+"
+1758025661661,"INFO	2025-09-16T12:27:41,660	10989	org.apache.spark.metrics.sink.GlueCloudwatchSink	[Thread-10]	16	CloudwatchSink: jobName: mdm_dq_ansh jobRunId: jr_6e6f8fcde3c06dc9ebaea884e12a3d87d3d50c2b923df8770082240c10941d1f
+"
+1758025661950,"INFO	2025-09-16T12:27:41,949	11278	org.apache.spark.deploy.history.SingleEventLogFileWriter	[Thread-10]	60	Logging events to file:/var/log/spark/apps/spark-application-1758025661129.inprogress
+"
+1758025662120,"INFO	2025-09-16T12:27:42,120	11449	com.amazonaws.services.gluedi.sensei.autodebugging.writers.AutoDebuggingEventLogFileWriter	[Thread-10]	62	Started file writer.
+"
+1758025662130,"INFO	2025-09-16T12:27:42,129	11458	glue.ch.cern.sparkmeasure.FlightRecorderStageMetrics	[Thread-10]	173	Using json as serialization format.
+"
+1758025662130,"INFO	2025-09-16T12:27:42,129	11458	glue.ch.cern.sparkmeasure.FlightRecorderStageMetrics	[Thread-10]	195	Writing output to /tmp/stageMetrics_flightRecorder
+"
+1758025662132,"INFO	2025-09-16T12:27:42,131	11460	glue.ch.cern.sparkmeasure.FlightRecorderTaskMetrics	[Thread-10]	173	Using json as serialization format.
+"
+1758025662132,"INFO	2025-09-16T12:27:42,132	11461	glue.ch.cern.sparkmeasure.FlightRecorderTaskMetrics	[Thread-10]	195	Writing output to /tmp/taskMetrics_flightRecorder
+"
+1758025662133,"INFO	2025-09-16T12:27:42,133	11462	org.apache.spark.SparkContext	[Thread-10]	60	Registered listener com.amazonaws.services.gluedi.sensei.autodebugging.listeners.AutoDebuggingListener
+"
+1758025662134,"INFO	2025-09-16T12:27:42,133	11462	org.apache.spark.SparkContext	[Thread-10]	60	Registered listener glue.ch.cern.sparkmeasure.FlightRecorderStageMetrics
+"
+1758025662134,"INFO	2025-09-16T12:27:42,134	11463	org.apache.spark.SparkContext	[Thread-10]	60	Registered listener glue.ch.cern.sparkmeasure.FlightRecorderTaskMetrics
+"
+1758025662172,"INFO	2025-09-16T12:27:42,171	11500	org.apache.spark.scheduler.cluster.glue.JESSchedulerBackend	[Thread-10]	60	getDriverLogUrls Map()
+"
+1758025662184,"INFO	2025-09-16T12:27:42,183	11512	org.apache.spark.executor.ExecutorLogUrlHandler	[Thread-10]	60	Fail to renew executor log urls: some of required attributes are missing in app's event log.. Required: Set(CONTAINER_ID) / available: Set(). Falling back to show app's original log urls.
+"
+1758025662201,"INFO	2025-09-16T12:27:42,200	11529	org.apache.spark.scheduler.cluster.glue.JESSchedulerBackend	[Thread-10]	60	SchedulerBackend is ready for scheduling beginning after reached minRegisteredResourcesRatio: 0.0
+"
+1758025662287,"INFO	2025-09-16T12:27:42,287	11616	org.apache.spark.deploy.glue.client.GlueTaskGroupRMClient	[executorAllocator]	60	createChildTask API response code 200
+"
+1758025662289,"INFO	2025-09-16T12:27:42,288	11617	org.apache.spark.scheduler.cluster.glue.allocator.ExecutorTaskAllocator	[executorAllocator]	60	executor task g-deece901e1ab90975f968960bb090a199ff15994 created for executor 1 in resource profile 0
+"
+1758025662808,"INFO	2025-09-16T12:27:42,807	12136	com.amazonaws.services.glue.GlueContext	[Thread-10]	121	GlueMetrics configured and enabled
+"
+1758025662812,"INFO	2025-09-16T12:27:42,812	12141	org.apache.spark.metrics.source.ObservabilityTaskInfoRecorderListener	[Thread-10]	28	ThroughputMetricsSource is initiated
+"
+1758025662815,"INFO	2025-09-16T12:27:42,814	12143	org.apache.spark.metrics.source.ObservabilityTaskInfoRecorderListener	[Thread-10]	53	ResourceUtilizationMetricsSource is initiated
+"
+1758025662817,"INFO	2025-09-16T12:27:42,816	12145	org.apache.spark.metrics.source.StageSkewness	[Thread-10]	29	[Observability] Skewness metric using Skewness Factor = 5
+"
+1758025662818,"INFO	2025-09-16T12:27:42,817	12146	org.apache.spark.metrics.source.ObservabilityTaskInfoRecorderListener	[Thread-10]	68	PerformanceMetricsSource is initiated
+"
+1758025662818,"INFO	2025-09-16T12:27:42,818	12147	com.amazonaws.services.glue.GlueContext	[Thread-10]	129	ObservabilityMetrics configured and enabled
+"
+1758025663595,"ERROR	2025-09-16T12:27:43,594	12923	com.amazonaws.services.glue.ProcessLauncher	[main]	76	Error from Python:Traceback (most recent call last):
+  File ""/tmp/glue-job-6628531441990114465/extra-py-files/data_quality_bcbsa-1.0-py3-none-any.whl/data_quality_bcbsa/runnable/run_process.py"", line 43, in run_process
+    logger.info(f""sns regions {sns._region}"")
+                               ^^^^^^^^^^^
+AttributeError: 'SNSManager' object has no attribute '_region'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File ""<frozen runpy>"", line 291, in run_path
+  File ""<frozen runpy>"", line 98, in _run_module_code
+  File ""<frozen runpy>"", line 88, in _run_code
+  File ""/tmp/glue-job-6628531441990114465/mdm_dq_ansh.py"", line 15, in <module>
+    run.run_process(run_type='Match', file_type = file_type, conf_file = conf_file)
+  File ""/tmp/glue-job-6628531441990114465/extra-py-files/data_quality_bcbsa-1.0-py3-none-any.whl/data_quality_bcbsa/runnable/run_process.py"", line 64, in run_process
+    sns.send_notification(const.SNS_TOPICS, f""Job Failure : Third Party {file_type} Failed"", message=str(e))
+  File ""/tmp/glue-job-6628531441990114465/extra-py-files/data_quality_bcbsa-1.0-py3-none-any.whl/data_quality_bcbsa/aws_services/sns_notification.py"", line 26, in send_notification
+    topic_arn = f""arn:aws:sns:{self._region}:{self._account_id}:{topic_name}""
+                               ^^^^^^^^^^^^
+AttributeError: 'SNSManager' object has no attribute '_region'
+"
+1758025663599,"INFO	2025-09-16T12:27:43,599	12928	com.amazonaws.services.glue.ProcessLauncher	[main]	60	postprocessing
+"
+1758025663600,"INFO	2025-09-16T12:27:43,599	12928	com.amazonaws.services.glue.ProcessLauncher	[main]	661	Enhance failure reason and emit cloudwatch error metrics.
+"
+1758025663600,"DEBUG	2025-09-16T12:27:43,599	12928	com.amazonaws.services.glue.ProcessLauncher	[main]	666	Original failureReason: AttributeError: 'SNSManager' object has no attribute '_region'
+"
+1758025663600,"DEBUG	2025-09-16T12:27:43,599	12928	com.amazonaws.services.glue.ProcessLauncher	[main]	667	exceptionErrorMessage is: 
+"
+1758025663614,"INFO	2025-09-16T12:27:43,614	12943	com.amazonaws.services.glue.ProcessLauncher	[main]	687	ExceptionErrorMessage failureReason: AttributeError: 'SNSManager' object has no attribute '_region'
+"
+1758025663681,"INFO	2025-09-16T12:27:43,681	13010	com.amazonaws.services.glue.ProcessLauncher	[main]	689	Error Category: INVALID_ARGUMENT_ERROR
+"
+1758025663682,"INFO	2025-09-16T12:27:43,681	13010	com.amazonaws.services.glue.ProcessLauncher	[main]	714	enhancedFailureReason: Error Category: INVALID_ARGUMENT_ERROR; AttributeError: 'SNSManager' object has no attribute '_region'
+"
+1758025663686,"INFO	2025-09-16T12:27:43,686	13015	com.amazonaws.services.glue.CloudWatchMetricsEmitter	[main]	34	Emit job error metrics
+"
+1758025663855,"INFO	2025-09-16T12:27:43,854	13183	com.amazonaws.services.glue.CloudWatchMetricsEmitter	[main]	34	Emit job error metrics
+"
+1758025663870,"INFO	2025-09-16T12:27:43,870	13199	com.amazonaws.services.glue.LogPusher	[main]	60	stopping
+"
+1758025663872,"java.lang.reflect.InvocationTargetException
+"
+1758025663872,"	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:569)
+"
+1758025663872,"	at com.amazonaws.services.glue.SparkProcessLauncherPlugin.invoke(ProcessLauncher.scala:55)
+	at com.amazonaws.services.glue.SparkProcessLauncherPlugin.invoke$(ProcessLauncher.scala:55)
+	at com.amazonaws.services.glue.ProcessLauncher$$anon$1.invoke(ProcessLauncher.scala:193)
+	at com.amazonaws.services.glue.ProcessLauncher.launch(ProcessLauncher.scala:421)
+	at com.amazonaws.services.glue.ProcessLauncher$.main(ProcessLauncher.scala:35)
+	at com.amazonaws.services.glue.ProcessLauncher.main(ProcessLauncher.scala)
+"
+1758025663872,"Caused by: org.apache.spark.SparkUserAppException: User application exited with 1
+	at org.apache.spark.deploy.PythonRunner$.main(PythonRunner.scala:112)
+	at org.apache.spark.deploy.PythonRunner.main(PythonRunner.scala)
+	... 10 more
+"
+1758025663874,"INFO	2025-09-16T12:27:43,874	13203	org.apache.spark.SparkContext	[shutdown-hook-0]	60	Invoking stop() from shutdown hook
+"
+1758025663875,"INFO	2025-09-16T12:27:43,875	13204	org.apache.spark.SparkContext	[shutdown-hook-0]	60	SparkContext is stopping with exitCode 0.
+"
+1758025663883,"INFO	2025-09-16T12:27:43,882	13211	glue.ch.cern.sparkmeasure.FlightRecorderStageMetrics	[spark-listener-group-shared]	43	Spark application ended, timestamp = 1758025663875
+"
+1758025663884,"WARN	2025-09-16T12:27:43,883	13212	glue.ch.cern.sparkmeasure.FlightRecorderStageMetrics	[spark-listener-group-shared]	57	Writing Stage Metrics data serialized as json to /tmp/stageMetrics_flightRecorder
+"
+1758025663885,"INFO	2025-09-16T12:27:43,884	13213	org.apache.spark.scheduler.cluster.glue.JESSchedulerBackend	[shutdown-hook-0]	60	Stopping JES Scheduler Backend.
+"
+1758025663886,"INFO	2025-09-16T12:27:43,886	13215	org.apache.spark.scheduler.cluster.glue.JESSchedulerBackend	[shutdown-hook-0]	60	Shutting down all executors
+"
+1758025663904,"INFO	2025-09-16T12:27:43,891	13220	org.apache.spark.scheduler.cluster.glue.JESSchedulerBackend$JESAsSchedulerBackendEndpoint	[dispatcher-CoarseGrainedScheduler]	60	Asking each executor to shut down
+"
+1758025663923,"INFO	2025-09-16T12:27:43,922	13251	glue.ch.cern.sparkmeasure.FlightRecorderTaskMetrics	[spark-listener-group-shared]	102	Spark application ended, timestamp = 1758025663875
+"
+1758025663923,"INFO	2025-09-16T12:27:43,923	13252	glue.ch.cern.sparkmeasure.FlightRecorderTaskMetrics	[spark-listener-group-shared]	116	Writing Task Metrics data serialized as json to /tmp/taskMetrics_flightRecorder
+"
+1758025663932,"INFO	2025-09-16T12:27:43,931	13260	org.apache.spark.MapOutputTrackerMasterEndpoint	[dispatcher-event-loop-3]	60	MapOutputTrackerMasterEndpoint stopped!
+"
+1758025663944,"INFO	2025-09-16T12:27:43,944	13273	org.apache.spark.storage.memory.MemoryStore	[shutdown-hook-0]	60	MemoryStore cleared
+"
+1758025663945,"INFO	2025-09-16T12:27:43,945	13274	org.apache.spark.storage.BlockManager	[shutdown-hook-0]	60	BlockManager stopped
+"
+1758025663956,"INFO	2025-09-16T12:27:43,955	13284	org.apache.spark.storage.BlockManagerMaster	[shutdown-hook-0]	60	BlockManagerMaster stopped
+"
+1758025664409,"INFO	2025-09-16T12:27:44,408	13737	org.apache.spark.scheduler.OutputCommitCoordinator$OutputCommitCoordinatorEndpoint	[dispatcher-event-loop-3]	60	OutputCommitCoordinator stopped!
+"
+1758025664451,"INFO	2025-09-16T12:27:44,451	13780	org.apache.spark.SparkContext	[shutdown-hook-0]	60	Successfully stopped SparkContext
+"
+1758025664452,"INFO	2025-09-16T12:27:44,452	13781	com.amazonaws.services.glue.LogPusher	[shutdown-hook-0]	60	uploading file:///var/log/spark/apps to s3://aws-glue-assets-971996090633-us-east-1/sparkHistoryLogs/
+"
+1758025664456,"INFO	2025-09-16T12:27:44,456	13785	org.apache.spark.util.ShutdownHookManager	[shutdown-hook-0]	60	Shutdown hook called
+"
+1758025664457,"INFO	2025-09-16T12:27:44,456	13785	org.apache.spark.util.ShutdownHookManager	[shutdown-hook-0]	60	Deleting directory /tmp/spark-217f6eac-d438-4a09-a634-4b68751a46c5/pyspark-2df79c0f-5c72-4c62-a0f0-4237d351dbde
+"
+1758025664463,"INFO	2025-09-16T12:27:44,463	13792	org.apache.spark.util.ShutdownHookManager	[shutdown-hook-0]	60	Deleting directory /tmp/spark-217f6eac-d438-4a09-a634-4b68751a46c5
+"
+1758025664470,"INFO	2025-09-16T12:27:44,469	13798	org.apache.spark.util.ShutdownHookManager	[shutdown-hook-0]	60	Deleting directory /tmp/spark-63c7dae7-57e1-42a2-9cb9-03af0357ed97
+"
